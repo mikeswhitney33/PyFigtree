@@ -23,7 +23,7 @@ def extensions():
 
     # fig_path = "figtree"
     root, _ = os.path.split(os.path.realpath(__file__))
-    fig_path = of.path.join(root, "figtree")
+    fig_path = os.path.join(root, "figtree")
     fig_src_path = os.path.join(fig_path, "src")
     fig_include_path = os.path.join(fig_path, "include")
     ann_path = os.path.join(fig_path, "external", "ann_1.1.1")
