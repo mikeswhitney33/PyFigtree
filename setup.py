@@ -22,7 +22,8 @@ def extensions():
     from Cython.Build import cythonize
 
     # fig_path = "figtree"
-    fig_path, _ = os.path.split(os.path.realpath(__file__))
+    root, _ = os.path.split(os.path.realpath(__file__))
+    fig_path = of.path.join(root, "figtree")
     fig_src_path = os.path.join(fig_path, "src")
     fig_include_path = os.path.join(fig_path, "include")
     ann_path = os.path.join(fig_path, "external", "ann_1.1.1")
