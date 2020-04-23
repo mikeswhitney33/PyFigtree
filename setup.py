@@ -36,7 +36,7 @@ def extensions():
     figtree_module = Extension(
         "figtree",
         [
-            "figtree.pyx",
+            os.path.join(fig_path, "figtree.pyx"),
             *fig_sources,
             *ann_sources
         ],
